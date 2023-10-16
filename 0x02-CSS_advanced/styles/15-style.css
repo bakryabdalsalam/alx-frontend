@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.5;
+  min-height: calc(1.5 * 1.6rem);
+}
+
+a[href]:not([href^="tel"]):not([href^="mailto"]) {
+  color: #007bff;
+}
+
+a[href]:not([href^="tel"]):not([href^="mailto"]):visited {
+  color: #007bff;
+  font-style: italic;
+}
+
+a[href]:not([href^="tel"]):not([href^="mailto"]):hover {
+  text-decoration: underline;
+}
+
+a[href]:not([href^="tel"]):not([href^="mailto"]):active {
+  background-color: #f8f9fa;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.section-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4.8rem;
+  font-weight: 700;
+  margin: 0;
+  color: #333;
+}
+
+.card-category,
+.section-tagline {
+  color: #007bff;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.card-category {
+  color: #007bff;
+}
+
+button,
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: #0069d9;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  box-shadow: 0 0 0 2px #007bff;
+}
